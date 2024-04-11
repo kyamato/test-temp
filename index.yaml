@@ -9,5 +9,5 @@ entries:
     description: Cluster template for rke2
     name: cluster-template
     urls:
-    - cluster-template-0.0.3.tgz
-    version: 0.0.3
+    - cluster-template-0.0.4.tgz
+    version: 0.0.4
