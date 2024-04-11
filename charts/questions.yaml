@@ -560,7 +560,7 @@ questions:
   description: "Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format)"
   show_if: cloudprovider=azure
   group: "Nodepools"
-# Cloudstack
+# CLOUDSTACK
 - variable: nodepools.0.image
   label: "Image"
   default: rocky88-g100-iscsi

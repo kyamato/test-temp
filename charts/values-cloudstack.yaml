@@ -1,4 +1,4 @@
-cloudprovider: digitalocean
+cloudprovider: cloudstack
 
 cloudCredentialSecretName: cloudstack
 
