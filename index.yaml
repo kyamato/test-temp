@@ -8,5 +8,5 @@ entries:
     description: Cluster template for rke2 test
     name: cluster-template
     urls:
-    - cluster-template-0.0.4.tgz
-    version: 0.0.4
+    - cluster-template-0.0.5.tar
+    version: 0.0.5
