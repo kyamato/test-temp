@@ -560,3 +560,74 @@ questions:
   description: "Azure Virtual Network name to connect the virtual machine (in [resourcegroup:]name format)"
   show_if: cloudprovider=azure
   group: "Nodepools"
+# Cloudstack
+- variable: nodepools.0.image
+  label: "Image"
+  default: rocky88-g100-iscsi
+  type: string
+  description: "Cloudstack Image"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.backups
+  label: "Backup"
+  default: false
+  type: boolean
+  description: "enable backups for cloudstack"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.ipv6
+  label: "IPv6"
+  default: false
+  type: boolean
+  description: "enable ipv6 for cloudstack"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.monitoring
+  label: "Monitoring"
+  default: false
+  type: boolean
+  description: "enable monitoring for cloudstack"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.privateNetworking
+  label: "Private Networking"
+  default: false
+  type: boolean
+  description: "enable private networking for cloudstack
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.region
+  label: "Region"
+  default: weber
+  type: string
+  description: "IDCF region"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.size
+  label: "Size"
+  default: highcpu.L8
+  type: string
+  description: "IDCF Size"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.userdata
+  label: "Userdata"
+  default:
+  type: multiline
+  description: "File contents for userdata"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.sshPort
+  label: "SSH Port"
+  default: 22
+  type: string
+  description: "SSH port"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
+- variable: nodepools.0.sshUser
+  label: "SSH User"
+  default: root
+  type: string
+  description: "SSH username"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
