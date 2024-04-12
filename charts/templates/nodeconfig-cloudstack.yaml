@@ -1,4 +1,4 @@
-{{- if eq .Values.cloudprovider "digitalocean" }}
+{{- if eq .Values.cloudprovider "cloudstack" }}
 {{- range $index, $nodepool := .Values.nodepools }}
 apiVersion: rke-machine-config.cattle.io/v1
 kind: CloudstackConfig

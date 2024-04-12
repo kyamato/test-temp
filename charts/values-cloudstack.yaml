@@ -65,7 +65,7 @@ nodepools:
   # enable backups for droplet
   # backups: true
 
-  # Digital Ocean Image
+  # Cloudstack Image
   image: rocky88-g100-iscsi
 
   # enable ipv6 for droplet
@@ -74,13 +74,13 @@ nodepools:
   # enable monitoring for droplet
   monitoring: false
 
-  # enable private networking for droplet
+  # enable private networking for vm
   privateNetworking: false
 
-  # Digital Ocean region
+  # Cloudstack region
   region: weber
 
-  # Digital Ocean size
+  # Cloudstack size
   size: highcpu.L8
 
   # File contents for sshKeyContents
@@ -95,7 +95,7 @@ nodepools:
   # SSH username
   sshUser: root
 
-  # comma-separated list of tags to apply to the Droplet
+  # comma-separated list of tags to apply to the vm
   # tags: ""
 
   # File contents for userdata
