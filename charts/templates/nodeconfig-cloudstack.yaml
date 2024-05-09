@@ -19,6 +19,7 @@ template: {{ $nodepool.template }}
 #ipv6: {{ $nodepool.ipv6 }}
 monitoring: {{ $nodepool.monitoring }}
 usePrivateAddress: {{ $nodepool.usePrivateAddress }}
+expunge: {{ $nodepool.expunge }}
 apiUrl: {{ $nodepool.apiUrl }}
 zone: {{ $nodepool.zone }}
 serviceOffering: {{ $nodepool.serviceOffering }}
@@ -51,6 +52,7 @@ template: {{ $nodepool.template }}
 #ipv6: {{ $nodepool.ipv6 }}
 monitoring: {{ $nodepool.monitoring }}
 usePrivateAddress: {{ $nodepool.usePrivateAddress }}
+expunge: {{ $nodepool.expunge }}
 apiUrl: {{ $nodepool.apiUrl }}
 zone: {{ $nodepool.zone }}
 serviceOffering: {{ $nodepool.serviceOffering }}

@@ -603,6 +603,13 @@ questions:
   description: "use private IP to access the machine"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
+- variable: nodepools.0.expunge
+  label: "Expunge VM"
+  default: true
+  type: boolean
+  description: "do not Keep removed VM"
+  show_if: cloudprovider=cloudstack
+  group: "Nodepools"
 - variable: nodepools.0.zone
   label: "Zone"
   default: weber

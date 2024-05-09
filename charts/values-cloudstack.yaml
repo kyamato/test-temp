@@ -77,6 +77,9 @@ nodepools:
   # Use a private IP to access the machine
   usePrivateAddress: true
 
+  # expunge used VM
+  expunge: true
+
   # Cloudstack zone
   zone: weber
 
