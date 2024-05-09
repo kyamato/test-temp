@@ -589,7 +589,7 @@ questions:
   description: "enable monitoring for IDCF VM"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
-- variable: nodepools.0.UsePrivateIP
+- variable: nodepools.0.usePrivateAddress
   label: "Private Networking"
   default: true
   type: boolean

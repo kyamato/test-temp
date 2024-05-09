@@ -75,7 +75,7 @@ nodepools:
   monitoring: false
 
   # Use a private IP to access the machine
-  UsePrivateIP: true
+  usePrivateAddress: true
 
   # Cloudstack region
   region: weber
