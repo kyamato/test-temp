@@ -19,6 +19,7 @@ template: {{ $nodepool.template }}
 ipv6: {{ $nodepool.ipv6 }}
 monitoring: {{ $nodepool.monitoring }}
 usePrivateAddress: {{ $nodepool.usePrivateAddress }}
+apiUrl: {{ $nodepool.apiUrl }}
 zone: {{ $nodepool.zone }}
 serviceOffering: {{ $nodepool.serviceOffering }}
 sshKeyContents: {{ $nodepool.sshKeyContents }}
@@ -50,6 +51,7 @@ template: {{ $nodepool.template }}
 ipv6: {{ $nodepool.ipv6 }}
 monitoring: {{ $nodepool.monitoring }}
 usePrivateAddress: {{ $nodepool.usePrivateAddress }}
+apiUrl: {{ $nodepool.apiUrl }}
 zone: {{ $nodepool.zone }}
 serviceOffering: {{ $nodepool.serviceOffering }}
 sshKeyContents: {{ $nodepool.sshKeyContents }}

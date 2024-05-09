@@ -83,6 +83,9 @@ nodepools:
   # Cloudstack serviceOffering
   serviceOffering: highcpu.L8
 
+  # IDCF Cloud API URL
+  apiUrl: https://compute.jp-east-2.idcfcloud.com/client/api
+
   # File contents for sshKeyContents
   # sshKeyContents: ""
 
