@@ -75,7 +75,7 @@ nodepools:
   monitoring: false
 
   # enable private networking for vm
-  privateNetworking: true
+  UsePrivateIP: true
 
   # Cloudstack region
   region: weber
