@@ -77,8 +77,8 @@ nodepools:
   # Use a private IP to access the machine
   usePrivateAddress: true
 
-  # Cloudstack region
-  region: weber
+  # Cloudstack zone
+  zone: weber
 
   # Cloudstack serviceOffering
   serviceOffering: highcpu.L8

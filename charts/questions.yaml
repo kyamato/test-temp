@@ -596,11 +596,11 @@ questions:
   description: "use private IP to access the machine"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
-- variable: nodepools.0.region
-  label: "Region"
+- variable: nodepools.0.zone
+  label: "Zone"
   default: weber
   type: string
-  description: "IDCF region"
+  description: "IDCF zone"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
 - variable: nodepools.0.serviceOffering
