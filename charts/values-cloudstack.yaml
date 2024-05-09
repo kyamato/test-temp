@@ -74,7 +74,7 @@ nodepools:
   # enable monitoring for droplet
   monitoring: false
 
-  # enable private networking for vm
+  # Use a private IP to access the machine
   UsePrivateIP: true
 
   # Cloudstack region
