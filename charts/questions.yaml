@@ -561,7 +561,7 @@ questions:
   show_if: cloudprovider=azure
   group: "Nodepools"
 # CloudStack
-- variable: nodepools.0.image
+- variable: nodepools.0.template
   label: "Image"
   default: rocky92-g100-iscsi
   type: string
@@ -603,11 +603,11 @@ questions:
   description: "IDCF region"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
-- variable: nodepools.0.size
+- variable: nodepools.0.serviceOffering
   label: "Size"
   default: highcpu.L8
   type: string
-  description: "IDCF VM size"
+  description: "IDCF VM serviceOffering"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
 - variable: nodepools.0.userdata

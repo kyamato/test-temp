@@ -15,12 +15,12 @@ common:
 {{ toYaml $nodepool.taints | indent 4 }}
 {{- end }}
 backups: {{ $nodepool.backups }}
-image: {{ $nodepool.image }}
+template: {{ $nodepool.template }}
 ipv6: {{ $nodepool.ipv6 }}
 monitoring: {{ $nodepool.monitoring }}
 usePrivateAddress: {{ $nodepool.usePrivateAddress }}
 region: {{ $nodepool.region }}
-size: {{ $nodepool.size }}
+serviceOffering: {{ $nodepool.serviceOffering }}
 sshKeyContents: {{ $nodepool.sshKeyContents }}
 sshKeyFingerprint: {{ $nodepool.sshKeyFingerprint }}
 sshPort: {{ $nodepool.sshPort | quote }}
@@ -46,12 +46,12 @@ common:
 {{ toYaml $nodepool.taints | indent 4 }}
 {{- end }}
 backups: {{ $nodepool.backups }}
-image: {{ $nodepool.image }}
+template: {{ $nodepool.template }}
 ipv6: {{ $nodepool.ipv6 }}
 monitoring: {{ $nodepool.monitoring }}
 usePrivateAddress: {{ $nodepool.usePrivateAddress }}
 region: {{ $nodepool.region }}
-size: {{ $nodepool.size }}
+serviceOffering: {{ $nodepool.serviceOffering }}
 sshKeyContents: {{ $nodepool.sshKeyContents }}
 sshKeyFingerprint: {{ $nodepool.sshKeyFingerprint }}
 sshPort: {{ $nodepool.sshPort | quote }}
