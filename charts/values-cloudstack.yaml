@@ -9,7 +9,7 @@ nodepools:
   worker: true
 
   # specify node labels
-  labels: {}
+  labels: "topology.kubernetes.io/region=jp-east-2"
 
   # specify node taints
   taints: {}
