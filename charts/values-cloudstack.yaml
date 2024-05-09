@@ -9,7 +9,7 @@ nodepools:
   worker: true
 
   # specify node labels
-  labels: "topology.kubernetes.io/region=jp-east-2"
+  labels: {}
 
   # specify node taints
   taints: {}
@@ -54,7 +54,7 @@ nodepools:
   #   maxSurge: "1"
 
   # specify machineDeployment Labels
-  # machineDeploymentLabels: {}
+  machineDeploymentLabels: "topology.kubernetes.io/region=jp-east-2"
 
   # specify machineDeployment annotations
   # machineDeploymentAnnotations: {}

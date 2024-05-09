@@ -628,7 +628,7 @@ questions:
   label: "SSH Port"
   default: 22
   type: string
-  description: "SSH port"
+  description: "SSH port number"
   show_if: cloudprovider=cloudstack
   group: "Nodepools"
 - variable: nodepools.0.sshUser
