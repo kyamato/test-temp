@@ -39,13 +39,13 @@ questions:
   - v1.26.15+rke2r1
   - v1.25.16+rke2r1
   group: "General"
-- variable: rke.controlPlaneConfig.etcd-snapshot-retention
+- variable: rke.controlPlaneConfig.snapshotRetention
   default: 5
   description: "Number of snapshots to retain"
   label: "snapshot retention"
   type: int
   group: "General"
-- variable: rke.controlPlaneConfig.etcd-snapshot-schedule-cron
+- variable: rke.controlPlaneConfig.snapshotScheduleCron
   default: "0 */12 * * *"
   description: "Snapshot interval time in cron spec."
   label: "snapshot cron schedule"
