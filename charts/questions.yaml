@@ -47,7 +47,7 @@ questions:
   group: "General"
 - variable: rke.controlPlaneConfig.etcd-snapshot-schedule-cron
   default: "0 */12 * * *"
-  description: "Snapshot interval time in cron spec. eg. every 5 hours '* */5 * * *' (default: "0 */12 * * *")"
+  description: "Snapshot interval time in cron spec."
   label: "snapshot cron schedule"
   type: string
   group: "General"
