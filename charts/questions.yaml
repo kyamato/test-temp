@@ -40,12 +40,12 @@ questions:
   - v1.25.16+rke2r1
   group: "General"
 - variable: rke.controlPlaneConfig.disableSnapshot
-  default: true
+  default: false
   label: "etcd control"
   description: "Enable etcd backup."
   type: boolean
   group: "Enable Etcd Backup"
-  show_subquestion_if: false
+  show_subquestion_if: true
   subquestions:
   - variable: rke.controlPlaneConfig.snapshotRetention
     default: 5
