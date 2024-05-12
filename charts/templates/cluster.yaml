@@ -122,7 +122,7 @@ spec:
       # Do not deploy packaged components and delete any deployed components (valid items: rke2-coredns, rke2-ingress-nginx, rke2-kube-proxy, rke2-metrics-server)
       # disable: false
       # Disable automatic etcd snapshots
-      etcd-disable-snapshots: false
+      # etcd-disable-snapshots: false
       # Expose etcd metrics to client interface. (Default false)
       # etcd-expose-metrics: false
       # Directory to save db snapshots. (Default location: ${data-dir}/db/snapshots)
@@ -130,9 +130,9 @@ spec:
       # Set the base name of etcd snapshots. Default: etcd-snapshot-<unix-timestamp> (default: "etcd-snapshot")
       # etcd-snapshot-name: ""
       # Number of snapshots to retain (default: 5)
-      etcd-snapshot-retention: 5
+      # etcd-snapshot-retention: 5
       # Snapshot interval time in cron spec. eg. every 5 hours '* */5 * * *' (default: "0 */12 * * *")
-      etcd-snapshot-schedule-cron: "0 */12 * * *"
+      # etcd-snapshot-schedule-cron: "0 */12 * * *"
       # Customized flag for kube-apiserver process
       # kube-apiserver-arg: ""
       # Customized flag for kube-scheduler process
