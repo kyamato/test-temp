@@ -18,8 +18,6 @@ spec:
   {{- if .Values.additionalManifest }}
   additionalManifest:
 {{ toYaml .Values.additionalManifest | indent 8 }}
-  {{- else }}
-  additionalManifest: {}
   {{- end }}
   {{- if .Values.kubernetesVersion }}
   kubernetesVersion: {{ .Values.kubernetesVersion }}
