@@ -42,23 +42,23 @@ questions:
 - variable: rke.controlPlaneConfig.disableSnapshots
   default: false
   label: "etcd control"
-  description: "Enable etcd backup."
+  description: "Enable etcd Snapshot."
   type: boolean
-  group: "Enable Etcd Backup"
+  group: "Etcd Snapshot"
   show_subquestion_if: true
   subquestions:
-  - variable: rke.controlPlaneConfig.snapshotRetention
-    default: 5
-    description: "Number of snapshots to retain"
-    label: "snapshot retention"
-    type: int
-    group: "Enable Etcd Backup"
   - variable: rke.controlPlaneConfig.snapshotScheduleCron
     default: "0 */12 * * *"
     description: "Snapshot interval time in cron spec."
     label: "snapshot cron schedule"
     type: string
-    group: "Enable Etcd Backup"
+    group: "Etcd Snapshot"
+  - variable: rke.controlPlaneConfig.snapshotRetention
+    default: 5
+    description: "Number of snapshots to be retained"
+    label: "snapshot retention"
+    type: int
+    group: "Etcd Snapshot"
 - variable: rke.localClusterAuthEndpoint.enabled
   default: false
   label: "Local Auth endpoint"
