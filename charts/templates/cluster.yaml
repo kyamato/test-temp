@@ -139,10 +139,7 @@ spec:
       # Snapshot interval time in cron spec. eg. every 5 hours '* */5 * * *' (default: "0 */12 * * *")
       # etcd-snapshot-schedule-cron: "0 */12 * * *"
       # Customized flag for kube-apiserver process
-      kube-apiserver-arg:
-        - feature-gates=TopologyAwareHints=true
-        - default-not-ready-toleration-seconds=30
-        - default-unreachable-toleration-seconds=30
+      kube-apiserver-arg: {{ .Values.apiserverArg }}
       # Customized flag for kube-scheduler process
       # kube-scheduler-arg: ""
       # Customized flag for kube-controller-manager process
