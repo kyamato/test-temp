@@ -15,8 +15,10 @@ spec:
   {{- if .Values.cloudCredentialSecretName }}
   cloudCredentialSecretName: {{ .Values.cloudCredentialSecretName }}
   {{- end }}
+  {{- if .Values.additionalManifest }}
   additionalManifest: |-
     {{ .Values.additionalManifest }}
+  {{- end }}
   {{- if .Values.kubernetesVersion }}
   kubernetesVersion: {{ .Values.kubernetesVersion }}
   {{- end }}
