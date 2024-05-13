@@ -140,8 +140,7 @@ spec:
       # etcd-snapshot-schedule-cron: "0 */12 * * *"
       # Customized flag for kube-apiserver process
       kube-apiserver-arg: >- 
-{{ toYaml .Values.apiserverArg | indent 10 }}
-      {{- end }}
+        {{ .Values.apiserverArg }}
       # Customized flag for kube-scheduler process
       # kube-scheduler-arg: ""
       # Customized flag for kube-controller-manager process
