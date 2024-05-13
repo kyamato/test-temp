@@ -19,7 +19,6 @@ kubernetesVersion: ""
 
 # general RKE options
 rke:
-  additionalManifest: ""
   controlPlaneConfig:
     # Number of snapshots to retain (default: 5)
     snapshotRetention: 5

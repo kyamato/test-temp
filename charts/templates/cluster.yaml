@@ -15,10 +15,6 @@ spec:
   {{- if .Values.cloudCredentialSecretName }}
   cloudCredentialSecretName: {{ .Values.cloudCredentialSecretName }}
   {{- end }}
-  {{- if .Values.additionalManifest }}
-  additionalManifest:
-{{ toYaml .Values.additionalManifest | indent 8 }}
-  {{- end }}
   {{- if .Values.kubernetesVersion }}
   kubernetesVersion: {{ .Values.kubernetesVersion }}
   {{- end }}
@@ -33,6 +29,8 @@ spec:
   # specify rancher helm chart values deployed into downstream cluster
   # rancherValues: {}
   rkeConfig:
+    additionalManifest:
+{{ toYaml .Values.additionalManifest | indent 8 }}
     {{- if .Values.rke.controlPlaneConfig.disableSnapshots }}
     etcd:
       snapshotRetention: {{ .Values.rke.controlPlaneConfig.snapshotRetention }}
