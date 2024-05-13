@@ -43,7 +43,8 @@ questions:
   default: ""
   description: "kube-api-server arg"
   label: "Kube apiServer arg."
-  type: "General"
+  type: multiline
+  group: "General"
 - variable: rke.controlPlaneConfig.disableSnapshots
   default: false
   label: "etcd control"
