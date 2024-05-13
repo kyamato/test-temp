@@ -65,6 +65,12 @@ questions:
     label: "snapshot retention"
     type: int
     group: "Etcd Snapshot"
+- variable: additionalManifest
+  default: ""
+  description: "add-on manifests"
+  label: "add-on manifest"
+  type: multiline
+  group: "General"
 - variable: rke.localClusterAuthEndpoint.enabled
   default: false
   label: "Local Auth endpoint"
