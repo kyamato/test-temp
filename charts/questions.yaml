@@ -293,7 +293,7 @@ questions:
     label: 'SSH User Group'
     default: docker:staff
     type: hostname
-    description: 'If using a non-B2D image the uploaded keys will need chown'ed, defaults to staff e.g. docker:staff'
+    description: "If using a non-B2D image the uploaded keys will need chown'ed, defaults to staff e.g. docker:staff"
     show_if: cloudprovider=vsphere
     group: 'Nodepools'
   - variable: nodepools.0.vappIpallocationpolicy
@@ -305,7 +305,7 @@ questions:
       - fixed
       - transient
       - fixedAllocated
-    description: 'vSphere vApp IP allocation policy. Supported values are: dhcp, fixed, transient and fixedAllocated'
+    description: "'vSphere vApp IP allocation policy. Supported values are: dhcp, fixed, transient and fixedAllocated'"
     show_if: cloudprovider=vsphere
     group: 'Nodepools'
   - variable: nodepools.0.vappIpprotocol
@@ -315,7 +315,7 @@ questions:
     options:
       - IPv4
       - IPv6
-    description: 'vSphere vApp IP protocol for this deployment. Supported values are: IPv4 and IPv6'
+    description: "'vSphere vApp IP protocol for this deployment. Supported values are: IPv4 and IPv6'"
     show_if: cloudprovider=vsphere
     group: 'Nodepools'
   # harvester
