@@ -2,7 +2,7 @@ apiVersion: v1
 name: cluster-template
 description: Cluster template for custom rke2
 version: 0.0.16
-icon: https://rke21.y.k8s.bdg.egg.jp/dashboard/img/custom.73e585f1.svg
+icon: https://console.idcfcloud.com/account/assets/img/services/ico-container.svg
 annotations:
   catalog.cattle.io/type: cluster-template
   catalog.cattle.io/namespace: fleet-default
