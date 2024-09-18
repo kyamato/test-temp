@@ -112,7 +112,7 @@ questions:
         type: multiline
         group: 'Monitoring'
   - variable: nodepools.0.name
-    default:
+    default: pool1
     description: 'Specify nodepool name'
     type: string
     label: 'Nodepool name'
